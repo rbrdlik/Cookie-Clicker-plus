@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/style.css">
+    <link rel="shortcut icon" type="x-icon" href="res/img/Cookie.png">
+    <title>• Cookie Clicker</title>
+</head>
+<body>
+    <section class="cookie-section b1" id="biomeBcg">
+        <h1>Cookie Clicker</h1>
+        <img src="res/img/Cookie.png" alt="" class="cookie" id="Cookie">
+        <div class="info-text">
+            <h2 id="CookieText">0 Sušenek</h2>
+            <h3 id="perClickInfo" style="margin-bottom: 10px; color: #999;">Počet sušenek za kliknutí: 1</h3>
+            <h2 id="multiplierText">Biome Forest (Násobič 1.0x)</h2>
+        </div>
+    </section>
+    <div class="barrier">
+        .
+    </div>
+    <section class="farms-section">
+        <div class="farms">
+            <div class="header-farms">
+                <h1>Cookie Farmy</h1>
+                <h4 style="color: #fcfcfc;" id="farmsTotalEarn">Celkový výdělek z farem 0 sušenek/sec.</h4>
+            </div>
+            <div class="barrier-horizontal" id="farm1border" style="opacity: 1;">.</div>
+            <div class="farm f1" id="farm1-box" style="opacity: 0;">
+                <h1 id="farm1Text">🍪 Pekařství - LVL. 1<br>50 sušenek/sec.</h1>
+            </div>
+            <div class="barrier-horizontal" id="farm2border" style="opacity: 0;">.</div>
+            <div class="farm f2" id="farm2-box" style="opacity: 0;">
+                <h1 id="farm2Text">🎑 Farma - LVL. 1<br>200 sušenek/sec.</h1>
+            </div>
+            <div class="barrier-horizontal" id="farm3border" style="opacity: 0;">.</div>
+            <div class="farm f3" id="farm3-box" style="opacity: 0;">
+                <h1 id="farm3Text">⛏ Důl - LVL. 1<br>600 sušenek/sec.</h1>
+            </div>
+            <div class="barrier-horizontal" id="farm4border" style="opacity: 0;">.</div>
+            <div class="farm f4" id="farm4-box" style="opacity: 0;">
+                <h1 id="farm4Text">🏭 Továrna - LVL. 1<br>1000 sušenek/sec.</h1>
+            </div>
+            <div class="barrier-horizontal" id="farm5border" style="opacity: 0;">.</div>
+            <div class="farm f5" id="farm5-box" style="opacity: 0;">
+                <h1 id="farm5Text">🏛 Banka - LVL. 1<br>2000 sušenek/sec.</h1>
+            </div>
+        </div>
+    </section>
+    <div class="barrier2">
+        .
+    </div>
+    <section class="shop-section">
+        <div class="UpgradeShop">
+            <div class="header-upgrade-shop">
+                <h1 style="margin-bottom: 14px; margin-top: 25px;">Vylepšení Obchod</h1>
+            </div>
+            <div class="ClickUpgBtn">
+                <div class="btn">
+                    <img src="res/img/Buttony/ClickUpg.png" alt="" id="ClickUpgradeBtn">
+                    <h6 style="color: #fefefe;" id="ClickUpgText">100 Sušenek.</h6>
+                </div>
+                <div class="btn" id="biomeBtn1" style="display: block;">
+                    <img src="res/img/Buttony/BiomeNew.png" alt="">
+                    <h6 style="color: #fefefe;">30000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="biomeBtn2" style="display: none;">
+                    <img src="res/img/Buttony/BiomeNew.png" alt="">
+                    <h6 style="color: #fefefe;">80000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="biomeBtn3" style="display: none;">
+                    <img src="res/img/Buttony/BiomeNew.png" alt="">
+                    <h6 style="color: #fefefe;">200000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="biomeBtn4" style="display: none;">
+                    <img src="res/img/Buttony/BiomeNew.png" alt="">
+                    <h6 style="color: #fefefe;">500000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="biomeBtn5" style="display: none;">
+                    <img src="res/img/Buttony/BiomeNew.png" alt="">
+                    <h6 style="color: #fefefe;">1000000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="biomeBtn6" style="display: none;">
+                    <img src="res/img/Buttony/BiomeNew.png" alt="">
+                    <h6 style="color: #fefefe;">2000000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="biomeBtn7" style="display: none;">
+                    <img src="res/img/Buttony/BiomeNew.png" alt="">
+                    <h6 style="color: #fefefe;">4500000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="biomeBtn8" style="display: none;">
+                    <img src="res/img/Buttony/BiomeVoidUpg.png" alt="">
+                    <h6 style="color: #fefefe;" id="biomeBtn8Text">6000000 Sušenek.</h6>
+                </div>
+            </div>
+            <div class="barrier-horizontal">.</div>
+            <div class="header-upgrade-shop" style="margin-top: 3vh;">
+                <h1 style="margin-bottom: 14px; margin-top: 14px;">Vylepšení Farmy</h1>
+            </div>
+            <div class="ClickUpgBtn">
+                <div class="btn" id="farmBtn1">
+                    <img src="res/img/Buttony/Bakery.png" alt="">
+                    <h6 style="color: #fefefe;" id="farm1BtnText">1000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="farmBtn2" style="display: none;">
+                    <img src="res/img/Buttony/Farm.png" alt="">
+                    <h6 style="color: #fefefe;" id="farm2BtnText">12000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="farmBtn3" style="display: none;">
+                    <img src="res/img/Buttony/Mines.png" alt="">
+                    <h6 style="color: #fefefe;" id="farm3BtnText">24000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="farmBtn4" style="display: none;">
+                    <img src="res/img/Buttony/Factory.png" alt="">
+                    <h6 style="color: #fefefe;" id="farm4BtnText">60000 Sušenek.</h6>
+                </div>
+                <div class="btn" id="farmBtn5" style="display: none;">
+                    <img src="res/img/Buttony/Bank.png" alt="">
+                    <h6 style="color: #fefefe;" id="farm5BtnText">125000 Sušenek.</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="res/js/script.js"></script>
+</body>
+</html>

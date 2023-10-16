@@ -403,9 +403,8 @@ farmBtn5.onclick = () => {
     }
 }
 
-function cheats(){
-    myCookieData += 35000000;
-    count_text.innerText = myCookieData+" Sušenek";
+function reloadPage(event){
+    event.preventDefault();
+    event.returnValue = "";
 }
-
-
+window.addEventListener("beforeunload", reloadPage);
